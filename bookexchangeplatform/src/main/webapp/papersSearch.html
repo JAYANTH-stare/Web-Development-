@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Papers</title>
+    <!-- Adding Google Fonts for Nunito Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General styles for the body */
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            background: linear-gradient(to bottom, black, cyan); /* Gradient background */
+            color: white;
+            margin: 0;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Styles for the heading */
+        h1 {
+            font-size: 2em; /* Larger text for the heading */
+            text-align: center;
+            margin-bottom: 20px; /* Space between heading and form */
+        }
+
+        /* Styles for the form container */
+        .form-container {
+            width: 600px; /* Larger form container */
+            padding: 40px; /* Increased padding */
+            background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+            border-radius: 15px; /* More rounded corners */
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Adding a shadow effect */
+            text-align: center; /* Centering the text */
+        }
+
+        /* Styles for form labels */
+        label {
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 10px; /* Spacing between label and input */
+        }
+
+        /* Styles for text input */
+        input[type="text"] {
+            font-size: 1.2em;
+            padding: 15px; /* Padding inside the input box */
+            border: none;
+            border-radius: 10px; /* Rounded corners */
+            width: 100%; /* Full width */
+            text-align: center; /* Centering the text */
+            color: black;
+        }
+
+        /* Styles for the search button */
+        button {
+            font-size: 1.2em;
+            padding: 15px 30px; /* Larger padding for the button */
+            background-color: cyan;
+            color: black;
+            border: none;
+            border-radius: 10px; /* Rounded corners */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for the search button */
+        button:hover {
+            background-color: lightcyan; /* Light cyan on hover */
+        }
+
+        /* Horizontal rule styling */
+        hr {
+            width: 100%;
+            border: 0;
+            height: 1px;
+            background-color: white;
+            opacity: 0.5;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>Search Papers</h1>
+    <div class="form-container">
+        <form action="papersSearch.jsp" method="get">
+            <label for="papersSubject">Subject Name:</label>
+            <input type="text" id="papersSubject" name="papersSubject" required>
+            <div style="margin-top: 20px;"> <!-- Adding space below the search bar -->
+                <button type="submit">Search</button>
+            </div>
+        </form>
+        <hr> <!-- Horizontal rule below the form -->
+    </div>
+</div>
+</body>
+</html>
